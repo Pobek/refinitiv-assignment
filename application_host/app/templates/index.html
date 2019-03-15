@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    <p>
+        How to use:
+        There are 5 possible endpoints:
+    </p>
+    <table border="1">
+        <tr>
+            <th>URI Endpoint</th>
+            <th>Returned Value</th>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Will return this output</td>
+        </tr>
+        <tr>
+            <td>/ip</td>
+            <td>Will return the host ip address</td>
+        </tr>
+        <tr>
+            <td>/time</td>
+            <td>Will return the current date & time</td>
+        </tr>
+        <tr>
+            <td>/api/ip</td>
+            <td>Will return the host ip address in JSON format</td>
+        </tr>
+        <tr>
+            <td>/api/time</td>
+            <td>Will return the current date & time in JSON format</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
